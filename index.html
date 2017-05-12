@@ -78,8 +78,8 @@
                 var query = event.target.value.toLowerCase();
                 var displayedContacts = CONTACTS.filter(function(el){
                     return el.name.toLowerCase().indexOf(query) !== -1;
-                })
-                console.log(displayedContacts)
+                });
+                console.log(displayedContacts);
                 this.setState({
                     displayedContacts : displayedContacts
                 })
@@ -87,6 +87,7 @@
             render: function(){
                 return(
                     <div>
+                        <h1>Changes</h1>
                         <input type="text" onChange={this.handleResult}/>
                         <ul>
                             {
